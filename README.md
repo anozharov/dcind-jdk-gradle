@@ -1,17 +1,10 @@
-# dcind (Docker-Compose-in-Docker)
+# dcind-jdk11-gradle (Docker-Compose-in-Docker)
 
-[![](https://images.microbadger.com/badges/image/amidos/dcind.svg)](http://microbadger.com/images/amidos/dcind "Get your own image badge on microbadger.com")
-
-
-### Versioning
-
-This repository and corresponding images on Docker Hub follow the semantic versioning [rules](https://semver.org/). It is advised to not rely on the `latest` tag when using `amidos/dcind` image in your CI pipelines. Consider using a specific version, like `amidos/dcind:1`.
+[![](https://images.microbadger.com/badges/image/sgcomsysto/dcind-jdk11-gradle.svg)](https://microbadger.com/images/sgcomsysto/dcind-jdk11-gradle "Get your own image badge on microbadger.com")
 
 ### Usage
 
-Use this ```Dockerfile``` to build a base image for your integration tests in [Concourse CI](http://concourse.ci/). Alternatively, you can use a ready-to-use image from the Docker Hub: [amidos/dcind](https://hub.docker.com/r/amidos/dcind/). The image is Alpine based.
-
-Here is an example of a Concourse [job](https://concourse-ci.org/jobs.html) that uses ```amidos/dcind``` image to run a bunch of containers in a task, and then runs the integration test suite. You can find a full version of this example in the [```example```](example) directory.
+You can use this prebuilt image to invoke Docker in parent container from the child container. Mainly, it exist for use in Concourse CI builds.
 
 Note that `docker-lib.sh` has bash dependencies, so it is important to use `bash` in your task.
 
@@ -34,7 +27,7 @@ Note that `docker-lib.sh` has bash dependencies, so it is important to use `bash
           image_resource:
             type: docker-image
             source:
-              repository: amidos/dcind
+              repository: sgcomsysto/dcind-jdk11-gradle
           inputs:
             - name: code
             - name: redis
@@ -70,5 +63,3 @@ Note that `docker-lib.sh` has bash dependencies, so it is important to use `bash
                 docker volume rm $(docker volume ls -q)
 
 ```
-
-[i17]: https://github.com/meAmidos/dcind/issues/17
