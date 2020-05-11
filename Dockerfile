@@ -6,11 +6,10 @@ ENV DOCKER_VERSION=19.03.8 \
     DOCKER_COMPOSE_VERSION=1.25.4
 
 # Install Docker and Docker Compose
-RUN apk --no-cache add bash curl util-linux device-mapper py-pip python-dev libffi-dev openssl-dev gcc libc-dev make iptables openjdk11 && \
+RUN apk --no-cache add curl util-linux device-mapper iptables openjdk11 docker-compose && \
     curl https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VERSION}.tgz | tar zx && \
     mv /docker/* /bin/ && \
     chmod +x /bin/docker* && \
-    pip install docker-compose==${DOCKER_COMPOSE_VERSION} && \
     rm -rf /root/.cache
 
 # Gradle
