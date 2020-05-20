@@ -1,6 +1,6 @@
 # dcind-jdk11-gradle (Docker-Compose-in-Docker)
 
-[![](https://images.microbadger.com/badges/image/sgcomsysto/dcind-jdk11-gradle.svg)](https://microbadger.com/images/sgcomsysto/dcind-jdk11-gradle "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/sgcomsysto/dcind-jdk-gradle.svg)](https://microbadger.com/images/sgcomsysto/dcind-jdk-gradle "Get your own image badge on microbadger.com")
 
 ### Description
 
