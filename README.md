@@ -19,6 +19,8 @@ Versions should follow the same tag template as Gradle (https://hub.docker.com/_
 
 For example, with Gradle 6.3 and JDK11 the tag should be: `6.3-jdk11`
 
+Docker Hub will automatically build the new version if the Git tag matching this template is pushed to the repository.
+
 ```yaml
   - name: integration
     plan:
