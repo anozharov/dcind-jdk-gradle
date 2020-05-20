@@ -2,6 +2,10 @@
 
 [![](https://images.microbadger.com/badges/image/sgcomsysto/dcind-jdk11-gradle.svg)](https://microbadger.com/images/sgcomsysto/dcind-jdk11-gradle "Get your own image badge on microbadger.com")
 
+### Description
+
+This is a prebuilt image of (meAmidos/dcind)[https://github.com/meAmidos/dcind] with Gradle 6.3 and JDK11 included. It uses Alpine 3.11 as the base image.
+
 ### Usage
 
 You can use this prebuilt image to invoke Docker in parent container from the child container. Mainly, it exist for use in Concourse CI builds.
