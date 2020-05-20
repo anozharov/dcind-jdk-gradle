@@ -12,6 +12,13 @@ You can use this prebuilt image to invoke Docker in parent container from the ch
 
 Note that `docker-lib.sh` has bash dependencies, so it is important to use `bash` in your task.
 
+
+### Development
+
+Versions should follow the same tag template as Gradle (https://hub.docker.com/_/gradle).
+
+For example, with Gradle 6.3 and JDK11 the tag should be: `6.3-jdk11`
+
 ```yaml
   - name: integration
     plan:
