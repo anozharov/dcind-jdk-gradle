@@ -1,6 +1,6 @@
 # Inspired by https://github.com/mumoshu/dcind
 FROM alpine:3.11
-LABEL maintainer="Sebastijan Grabar <baso53@outlook.com>"
+LABEL maintainer="Sebastijan Grabar <sebastijan.grabar@comsysto.com>"
 
 ENV DOCKER_VERSION=19.03.8 \
     DOCKER_COMPOSE_VERSION=1.25.4
