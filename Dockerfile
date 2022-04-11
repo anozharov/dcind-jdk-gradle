@@ -14,7 +14,7 @@ RUN apk --no-cache add bash curl util-linux device-mapper libffi-dev openssl-dev
 
 # Gradle
 
-ARG GRADLE_VERSION=6.3
+ARG GRADLE_VERSION=7.4.2
 
 RUN mkdir -p /opt/gradle && \
   mkdir /tmp/gradle_download_folder && \
